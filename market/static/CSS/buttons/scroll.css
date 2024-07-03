@@ -1,0 +1,8 @@
+.scroll-button {
+    transition: filter 0.3s; /* Плавный переход */
+}
+
+.scroll-button:hover {
+    filter: brightness(1.2) contrast(1.2) sepia(20) hue-rotate(30deg); /* Увеличение яркости, контраста, добавление золотистого оттенка */
+}
+
