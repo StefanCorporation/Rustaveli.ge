@@ -1,4 +1,5 @@
 .scroll-button {
+<<<<<<< HEAD
     transition: transform 0.3s ease-in-out;
     
 }
@@ -6,5 +7,12 @@
 .scroll-button:hover {
     filter: brightness(1.2) contrast(1.2) sepia(20) hue-rotate(30deg); 
     transform: scale(1.1);
+=======
+    transition: filter 0.3s; /* Плавный переход */
+}
+
+.scroll-button:hover {
+    filter: brightness(1.2) contrast(1.2) sepia(20) hue-rotate(30deg); /* Увеличение яркости, контраста, добавление золотистого оттенка */
+>>>>>>> 42c062573a420c475782c8c994f27c282e606e63
 }
 
