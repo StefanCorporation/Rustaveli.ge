@@ -1,0 +1,24 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-family: "Dancing Script", cursive;
+
+
+
+}
+
+.image-container:hover .hover-text {
+    left: 80%;
+    opacity: 1;
+    font-family: "Dancing Script", cursive;
+}

@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'market.apps.MarketConfig',
+    'marketplace.apps.MarketPlaceConfig',
+    'users.apps.UsersConfig',
+    'shop.apps.ShopConfig',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +58,10 @@ ROOT_URLCONF = 'rustaveli.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'marketplace/templates',
+            BASE_DIR / 'users/templates'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,7 +125,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'market/static/CSS/',
+    BASE_DIR / 'marketplace/static/CSS/',
 ]
 
 MEDIA_URL = '/media/'

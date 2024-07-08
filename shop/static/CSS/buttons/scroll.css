@@ -1,0 +1,15 @@
+.scroll-button {
+
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.scroll-button {
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; 
+}
+
+.scroll-button:hover {
+    filter: brightness(1.2) contrast(1.2) sepia(20%) hue-rotate(30deg); 
+    transform: scale(1.1); 
+}
+
