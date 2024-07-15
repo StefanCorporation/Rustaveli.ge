@@ -1,0 +1,46 @@
+.modal {
+    display: none; /* Скрыть по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включить прокрутку при необходимости */
+    background-color: rgba(0, 0, 0, 0.5); /* Черный фон с прозрачностью */
+    opacity: 0; /* Начальное состояние для анимации */
+    transition: opacity 0.3s ease; /* Плавный переход */
+  }
+  
+  /* Модальное содержимое */
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+    margin: 15% auto; /* 15% сверху и центрировать */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px; /* Округленные углы */
+    width: 80%; /* Ширина 80% */
+    max-height: 70vh; /* Максимальная высота для прокрутки */
+    overflow-y: auto; /* Вертикальная прокрутка */
+  }
+  
+  /* Кнопка закрытия */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+  /* Показ модального окна */
+.modal.show {
+    display: block;
+    opacity: 1;
+}

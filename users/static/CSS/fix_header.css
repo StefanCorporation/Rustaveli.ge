@@ -1,0 +1,4 @@
+html {
+    font-size: initial; /* Отменяет размер шрифта Bootstrap */
+    -webkit-tap-highlight-color: initial; /* Отменяет цвет выделения при нажатии */
+}

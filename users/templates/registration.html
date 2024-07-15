@@ -1,0 +1,68 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'CSS/login.css' %}">
+<link rel="stylesheet" href="{% static 'CSS/social.css' %}">
+
+
+
+
+
+<body>
+    <section class="container">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+                <img src="{% static 'images/login_logout/shota_rustaveli_login.png' %}" alt="illustration" class="illustration" />
+                <h1 class="opacity">Sign in</h1>
+                <form>
+                    <input type="text" placeholder="Username" />
+                    <input type="email" placeholder="Email" />
+                    <input type="text" placeholder="Phone" />
+                    <input type="password" placeholder="Password" />
+                    <input type="password" placeholder="Submit Password" />
+                    <button class="opacity f-opacity ">SUBMIT</button>
+
+                    
+                    <!--Social-->
+
+                    <div class="icons_container">
+                        <div class="icon facebook">
+                           <div class="tooltip">
+                              Facebook
+                           </div>
+                           <span><i class="fab fa-facebook-f"></i></span>
+                        </div>
+                        <div class="icon twitter">
+                           <div class="tooltip">
+                              Twitter
+                           </div>
+                           <span><i class="fab fa-twitter"></i></span>
+                        </div>
+                        <div class="icon google">
+                           <div class="tooltip">
+                              Google
+                           </div>
+                           <span><i class="fab fa-google"></i></span>
+                        </div>
+                        <div class="icon github">
+                           <div class="tooltip">
+                              Github
+                           </div>
+                           <span><i class="fab fa-github"></i></span>
+                        </div>
+                     </div>
+
+
+                </form>
+                <div class="register-forget opacity">
+                    <a href="">Already have an account? Login </a>
+                    <a href="">FORGOT PASSWORD</a>
+                </div>
+            </div>
+            <div class="circle circle-two"></div>
+        </div>
+        <div class="theme-btn-container"></div>
+    </section>
+</body>
+
+<script src="{% static 'JS/set_color.js' %}" ></script>
