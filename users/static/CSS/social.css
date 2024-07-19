@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
-  margin-top: 20px;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+
 }
 html,body{
   display: grid;
   height: 100%;
   width: 100%;
   place-items: center;
+  margin-top: 20px;
 
 }
 .icons_container{
   display: inline-flex;
+  padding-top: 9px; 
+  display: flex;
+ 
+  
 }
 .icons_container .icon{
   margin: 0 15px;
@@ -34,7 +38,7 @@ html,body{
   font-size:19px;
   height: 50px;
   width: 50px;
-  background: #fff;
+  background: #ddc0e452;
   border-radius: 50%;
   position: relative;
   z-index: 2;
@@ -101,4 +105,8 @@ html,body{
 .icons_container .github:hover .tooltip:before{
   background: #333;
 }
+
+
+
+                    
 
